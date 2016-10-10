@@ -72,7 +72,7 @@ class Interactive {
             
             
         }
-        print("Exiting...")
+        print("Thank you for using Tip Calculator Mach 5!")
         
         return
     }
