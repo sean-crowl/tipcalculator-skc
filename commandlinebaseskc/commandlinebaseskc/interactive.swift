@@ -27,7 +27,7 @@ class Interactive {
             }
             
         }
-        print("Exiting....")
+        print("Exiting...")
         
         return
     }
