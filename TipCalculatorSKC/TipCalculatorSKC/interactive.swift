@@ -19,13 +19,13 @@ class Interactive {
             
             io.writeMessage("\nWelcome to Tip Calculator Mach 5! Type 'Start' to begin. Otherwise, type 'Help' for information, or 'Quit' to Quit!")
             currentInput = io.getInput()
-            if currentInput == "Help" {
+            let choice = currentInput
+            switch choice {
+            case "Help":
                 print("This is a tip calculator! You will be asked a few questions, such as your bill amount, how much you would like to tip, and the number of people splitting the bill. It will then calculate how much you are to tip, as well as your total bill!")
-            }
-            else if currentInput == "Quit" {
+            case "Quit":
                 done = true
-            }
-            else if currentInput == "Start" {
+            case "Start":
                 
             
             io.writeMessage("\nWhat is the subtotal amount?")
@@ -45,7 +45,7 @@ class Interactive {
                     print("\nRestarting...")
                 }
                 
-            } else {
+            default:
                 print("You must make a valid selection!")
             }
             

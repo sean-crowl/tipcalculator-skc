@@ -62,7 +62,6 @@ class Calculator {
     currentInput = io.getInput()
     if currentInput == "Quit" {
         print("Thank you for using Tip Calculator Mach 5!")
-        exit(EXIT_SUCCESS)
     }
     else if currentInput == "Restart" {
     print("Now restarting!")

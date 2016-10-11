@@ -13,5 +13,4 @@ let interactive = Interactive()
 // Run in Interactive mode
 interactive.go()
 
-exit(EXIT_SUCCESS)
 
