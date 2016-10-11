@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E3948D41DAD394C003ECE0D /* calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3948D31DAD394C003ECE0D /* calculator.swift */; };
 		2EABB5491DABEFF3001F3A85 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EABB5481DABEFF3001F3A85 /* main.swift */; };
 		2EABB5501DABF038001F3A85 /* interactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EABB54F1DABF038001F3A85 /* interactive.swift */; };
 		2EABB5521DABF042001F3A85 /* io.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EABB5511DABF042001F3A85 /* io.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2E3948D31DAD394C003ECE0D /* calculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calculator.swift; sourceTree = "<group>"; };
 		2EABB5451DABEFF3001F3A85 /* TipCalculatorSKC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TipCalculatorSKC; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EABB5481DABEFF3001F3A85 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2EABB54F1DABF038001F3A85 /* interactive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = interactive.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				2EABB5481DABEFF3001F3A85 /* main.swift */,
 				2EABB54F1DABF038001F3A85 /* interactive.swift */,
 				2EABB5511DABF042001F3A85 /* io.swift */,
+				2E3948D31DAD394C003ECE0D /* calculator.swift */,
 			);
 			path = TipCalculatorSKC;
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EABB5501DABF038001F3A85 /* interactive.swift in Sources */,
+				2E3948D41DAD394C003ECE0D /* calculator.swift in Sources */,
 				2EABB5521DABF042001F3A85 /* io.swift in Sources */,
 				2EABB5491DABEFF3001F3A85 /* main.swift in Sources */,
 			);
@@ -258,6 +262,7 @@
 				2EABB54E1DABEFF3001F3A85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

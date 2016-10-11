@@ -12,11 +12,11 @@ class Interactive {
     private var done: Bool = false
     private var currentInput: String = ""
     private var io = Io()
+    private var calc = Calculator()
     
     func go() {
         while !done {
             
-            // Ask the user for input right here.
             io.writeMessage("\nWelcome to Tip Calculator Mach 5! Type 'Start' to begin. Otherwise, type 'Help' for information, or 'Quit' to Quit!")
             currentInput = io.getInput()
             if currentInput == "Help" {
@@ -29,42 +29,21 @@ class Interactive {
                 
             
             io.writeMessage("\nWhat is the subtotal amount?")
-            currentInput = io.getInput()
-            let amount = Double(currentInput)
+            calc.getAmount()
             
             io.writeMessage("\nWhat percentage would you like to tip?")
-            currentInput = io.getInput()
-            let tip = Double(currentInput)
+            calc.getTip()
                 
             io.writeMessage("\nHow many people are splitting the bill?")
+            calc.getPeople()
+                
+            io.writeMessage("\nReady to calculate? Type 'Yes' to calculate, or 'No' to start over.")
             currentInput = io.getInput()
-            let people = Double(currentInput)
-            
-                
-                if amount == nil {
-                    print("You did not enter acceptable numbers! Please try again")
-                } else {
-                    let tipAmount = String(format: "%.2f", Double(tip!)/100)
-                    let tipResult = String(format: "%.2f", Double(amount!) * Double(tipAmount)!)
-                    let tipResultSplit = String(format: "%.2f", (Double(amount!) * Double(tipAmount)!) / Double(people!))
-                    let billAmount = String(format: "%.2f", Double(amount!) + Double(tipResult)!)
-                    let billAmountSplit = String(format: "%.2f", (Double(amount!) + Double(tipResult)!) / Double(people!))
-                    
-            print("\nThe total tip amount is: $\(tipResult)")
-            print("The total amount due is: $\(billAmount)")
-            print("The tip amount per person is: $\(tipResultSplit)")
-            print("The total amount per person is: $\(billAmountSplit)")
-                
-            io.writeMessage("\nWould you like to calculate a new tip? Type 'Restart' to restart. Otherwise, type 'Quit' to quit.")
-            currentInput = io.getInput()
-                if currentInput == "Quit" {
-                    done = true
+                if currentInput == "Yes" {
+                    calc.calculate()
+                } else if currentInput == "No" {
+                    print("\nRestarting...")
                 }
-                else if currentInput == "Restart" {
-                    print("Now restarting!")
-                }
-                }
-                
                 
             } else {
                 print("You must make a valid selection!")
