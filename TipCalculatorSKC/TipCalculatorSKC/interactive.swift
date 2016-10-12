@@ -31,6 +31,9 @@ class Interactive {
             io.writeMessage("\nWhat is the subtotal amount?")
             calc.getAmount()
             
+            io.writeMessage("\nWhat percentage of sales tax is there?")
+            calc.getTax()
+            
             io.writeMessage("\nWhat percentage would you like to tip?")
             calc.getTip()
                 
