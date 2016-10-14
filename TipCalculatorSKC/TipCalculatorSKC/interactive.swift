@@ -14,6 +14,7 @@ class Interactive {
     private var io = Io()
     private var calc = Calculator()
     
+    
     func go() {
         while !done {
             
@@ -40,7 +41,7 @@ class Interactive {
             io.writeMessage("\nHow many people are splitting the bill?")
             calc.getPeople()
                 
-            io.writeMessage("\nReady to calculate? Type 'Yes' to calculate, or 'No' to start over.")
+            io.writeMessage("\nReady to calculate? Type 'Yes' to calculate, or anything else to start over.")
             currentInput = io.getInput()
                 if currentInput == "Yes" {
                     calc.calculate()
